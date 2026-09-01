@@ -1,0 +1,20 @@
+{
+  "id": "whatsapp.key-bundle.repair.001",
+  "stages": [
+    "created",
+    "checking",
+    "reconciling",
+    "uploading-prekeys",
+    "rotating-signed-prekey",
+    "verifying",
+    "repaired"
+  ],
+  "actions": [
+    "none",
+    "upload-prekeys",
+    "rotate-signed-prekey",
+    "upload-and-rotate"
+  ],
+  "failurePolicy": "failed; do not claim repaired",
+  "verification": "final digest query required"
+}

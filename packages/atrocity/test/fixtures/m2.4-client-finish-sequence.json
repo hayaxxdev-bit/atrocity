@@ -1,0 +1,12 @@
+{
+  "id": "noise.client-finish.sequence.001",
+  "reference": "WhiskeySockets/Baileys src/Socket/socket.ts",
+  "steps": [
+    "obtain ClientPayload",
+    "encrypt ClientPayload with Noise state",
+    "build clientFinish.static from keyEnc",
+    "build clientFinish.payload from encrypted payload",
+    "encode HandshakeMessage"
+  ],
+  "exactWireExpected": null
+}

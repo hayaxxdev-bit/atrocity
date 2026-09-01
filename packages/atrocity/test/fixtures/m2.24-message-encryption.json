@@ -1,0 +1,12 @@
+{
+  "id": "whatsapp.message.encryption.001",
+  "reference": "WhiskeySockets/Baileys src/Socket/messages-send.ts + src/Signal/libsignal.ts",
+  "flow": [
+    "encodeWAMessage",
+    "signalRepository.encryptMessage(jid, data)",
+    "map Signal type to msg/pkmsg",
+    "wrap ciphertext in to/enc envelope"
+  ],
+  "boundary": "Signal ciphertext is separate from WhatsApp node envelope",
+  "exactWAMessageProtoBytes": null
+}

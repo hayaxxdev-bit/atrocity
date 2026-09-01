@@ -1,0 +1,17 @@
+{
+  "reference": "WhiskeySockets/Baileys src/Socket/socket.ts current master",
+  "namespaces": {
+    "encrypt": ["digest", "pre-key upload", "rotate"],
+    "passive": ["active", "passive"],
+    "md": ["remove-companion-device", "link_code_companion_reg"],
+    "w:stats": ["add"]
+  },
+  "implemented": [
+    "encrypt digest",
+    "encrypt pre-key upload",
+    "passive/active",
+    "remove companion device",
+    "WAM stats"
+  ],
+  "exactWireVectors": null
+}

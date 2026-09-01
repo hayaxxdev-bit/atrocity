@@ -1,0 +1,17 @@
+{
+  "id": "wa-message.protobuf.surface.001",
+  "reference": "WhiskeySockets/Baileys src/Types/Message.ts + src/Socket/messages-send.ts",
+  "fields": [
+    "key",
+    "message",
+    "messageTimestamp",
+    "pushName"
+  ],
+  "messageCases": [
+    "conversation",
+    "extendedTextMessage",
+    "contextInfo"
+  ],
+  "goldenHex": null,
+  "productionCodec": "generated WAProto codec injected through WAMessageCodec"
+}

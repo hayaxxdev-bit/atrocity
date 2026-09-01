@@ -1,0 +1,1 @@
+{"id":"whatsapp.prekey.serialization.001","reference":"WhiskeySockets/Baileys src/Utils/signal.ts","signedPreKey":{"tag":"skey","children":["id","value","signature"],"idEncoding":"3-byte big-endian","wireFields":["publicKey","signature"]},"preKey":{"tag":"key","children":["id","value"],"idEncoding":"3-byte big-endian","wireFields":["publicKey"]},"privateFieldsOnWire":false}

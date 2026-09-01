@@ -1,0 +1,12 @@
+{
+  "id": "node.dispatch.sequence.001",
+  "order": [
+    "decode-node",
+    "resolve-iq-correlation",
+    "emit-protocol.node",
+    "registry-dispatch",
+    "domain-handler"
+  ],
+  "unmatchedPolicy": "observable via protocol.node",
+  "correlationPolicy": "IQ correlation is attempted before feature routes"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "whatsapp.key-bundle.digest.exchange.001",
+  "reference": "WhiskeySockets/Baileys src/Socket/socket.ts",
+  "request": {
+    "xmlns": "encrypt",
+    "type": "get",
+    "child": "digest"
+  },
+  "resultStates": [
+    "match",
+    "mismatch",
+    "repair-required"
+  ],
+  "missingDigest": "repair-required",
+  "invalidDigest": "typed failure",
+  "localDigestAlgorithm": "internal fingerprint only",
+  "serverAlgorithm": "not assumed without reference vector"
+}

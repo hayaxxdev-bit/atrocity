@@ -1,0 +1,19 @@
+{
+  "id": "whatsapp.prekey.reconciliation.001",
+  "reference": "WhiskeySockets/Baileys src/Socket/socket.ts + src/Utils/signal.ts",
+  "observations": [
+    "server count",
+    "current prekey existence"
+  ],
+  "decisions": [
+    "no-action",
+    "upload"
+  ],
+  "reasons": [
+    "server-count-zero",
+    "server-count-below-threshold",
+    "current-prekey-missing"
+  ],
+  "networkUpload": "deferred to subsequent orchestration milestone",
+  "exactThresholds": null
+}

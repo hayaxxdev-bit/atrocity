@@ -1,0 +1,39 @@
+{
+  "milestone": "M1.60",
+  "typescriptFiles": 224,
+  "dependencyCycles": [],
+  "duplicateRootExports": [],
+  "anyProductionHits": [
+    [
+      "noise/noise-handshake.ts",
+      63,
+      "* This does not claim to implement any specific WhatsApp pattern."
+    ],
+    [
+      "protocol/events/protocol-event-bus.ts",
+      14,
+      "Set<(...args: any[]) => any>"
+    ]
+  ],
+  "privateLikeAccesses": [],
+  "rootPublicExports": [
+    "export * from \"./public/index.js\";",
+    "export * from \"./protocol/index.js\";",
+    "export * from \"./transport/index.js\";",
+    "export * from \"./crypto/index.js\";",
+    "export * from \"./noise/index.js\";",
+    "export * from \"./connection/index.js\";",
+    "export * from \"./auth/index.js\";",
+    "export * from \"./signal/index.js\";",
+    "export * from \"./client/index.js\";",
+    "export * from \"./client/public-api.js\";",
+    "export * from \"./app/index.js\";"
+  ],
+  "findings": [
+    "Root package entrypoint re-exports internal infrastructure.",
+    "ProtocolEventBus uses any internally.",
+    "Composition root uses injected sendProtocolNode adapter.",
+    "Credential/session persistence is not encrypted-at-rest.",
+    "Message/presence/receipt semantics remain provisional until M2."
+  ]
+}

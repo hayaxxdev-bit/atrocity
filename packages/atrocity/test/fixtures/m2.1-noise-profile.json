@@ -1,0 +1,10 @@
+{
+  "profile": "whatsapp",
+  "source": "Baileys Defaults/index.ts current master",
+  "headerHex": "57410603",
+  "mode": "Noise_XX_25519_AESGCM_SHA256\\u0000\\u0000\\u0000\\u0000",
+  "handshakePattern": "XX",
+  "dh": "25519",
+  "cipher": "AESGCM",
+  "hash": "SHA256"
+}

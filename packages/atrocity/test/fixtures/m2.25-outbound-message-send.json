@@ -1,0 +1,1 @@
+{"id":"whatsapp.outbound.message.send.001","flow":["serialize message","resolve devices","encrypt per device","build to/enc children","build outer message","send"],"sendFailure":"do not report sent","exactWAMessageProtoBytes":null}

@@ -1,0 +1,13 @@
+{
+  "id": "whatsapp.prekey.exchange.001",
+  "reference": "WhiskeySockets/Baileys src/Socket/socket.ts",
+  "operations": [
+    "inspect current pre-key count",
+    "upload pre-keys when required",
+    "build encrypt namespace IQ",
+    "track uploaded count",
+    "support signed-pre-key rotation boundary",
+    "compute/validate key-bundle digest"
+  ],
+  "exactWireBytes": null
+}

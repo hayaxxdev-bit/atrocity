@@ -1,0 +1,30 @@
+{
+  "name": "@hayaxxdev-bit/atrocity",
+  "version": "0.1.0",
+  "description": "Independent TypeScript WhatsApp client engine.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./internal": {
+      "types": "./dist/internal.d.ts",
+      "import": "./dist/internal.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "type-check": "tsc --noEmit -p tsconfig.json",
+    "test": "tsx --test test/**/*.test.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  },
+  "dependencies": {
+    "@noble/curves": "^2.3.0"
+  }
+}

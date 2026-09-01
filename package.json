@@ -1,0 +1,20 @@
+{
+  "name": "atrocity",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Independent TypeScript WhatsApp client engine workspace.",
+  "license": "MIT",
+  "packageManager": "pnpm@11.24.0",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=11.0.0"
+  },
+  "scripts": {
+    "build": "pnpm --filter @hayaxxdev-bit/atrocity build",
+    "type-check": "pnpm --filter @hayaxxdev-bit/atrocity type-check",
+    "test": "pnpm --filter @hayaxxdev-bit/atrocity test"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}

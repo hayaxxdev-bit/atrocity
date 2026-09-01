@@ -1,0 +1,11 @@
+{
+  "id": "noise.handshake.orchestration.001",
+  "stages": [
+    "clientHello",
+    "serverHello",
+    "clientFinish",
+    "transportReady"
+  ],
+  "expectedCryptographicValues": null,
+  "note": "Orchestration fixture only; exact transcript bytes require captured reference vectors."
+}

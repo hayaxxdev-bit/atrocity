@@ -1,0 +1,17 @@
+{
+  "id": "stream.runtime.sequence.001",
+  "stages": [
+    "authenticated",
+    "opening",
+    "stream-open-sent",
+    "stream-features-received",
+    "capabilities-negotiated",
+    "protocol-started",
+    "ready"
+  ],
+  "ownership": {
+    "connectionManager": "global connection lifecycle",
+    "streamRuntime": "authenticated stream lifecycle",
+    "protocolRuntime": "protocol feature lifecycle"
+  }
+}

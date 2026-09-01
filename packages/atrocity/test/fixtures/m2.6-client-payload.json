@@ -1,0 +1,32 @@
+{
+  "id": "client-payload.reference-profile.001",
+  "reference": "WhiskeySockets/Baileys src/Utils/validate-connection.ts",
+  "login": {
+    "passive": true,
+    "pull": true,
+    "required": [
+      "username",
+      "device",
+      "userAgent"
+    ]
+  },
+  "registration": {
+    "passive": false,
+    "pull": false,
+    "required": [
+      "devicePairingData",
+      "userAgent"
+    ],
+    "pairingFields": [
+      "buildHash",
+      "deviceProps",
+      "eRegid",
+      "eKeytype",
+      "eIdent",
+      "eSkeyId",
+      "eSkeyVal",
+      "eSkeySig"
+    ]
+  },
+  "exactWireBytes": null
+}

@@ -1,0 +1,33 @@
+{
+  "id": "message.delivery.lifecycle.001",
+  "states": [
+    "created",
+    "encrypted",
+    "sent",
+    "server-acked",
+    "delivered",
+    "read",
+    "retry-required",
+    "session-repair-required",
+    "failed"
+  ],
+  "happyPath": [
+    "encrypted",
+    "sent",
+    "server-ack",
+    "delivered",
+    "read"
+  ],
+  "retryPath": [
+    "encrypted",
+    "sent",
+    "retry",
+    "encrypted"
+  ],
+  "repairPath": [
+    "encrypted",
+    "sent",
+    "session-repair"
+  ],
+  "retryAttempts": "monotonic counter"
+}

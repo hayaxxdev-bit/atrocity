@@ -1,0 +1,18 @@
+{
+  "id": "message.retry.session-repair.001",
+  "states": [
+    "created",
+    "inspecting",
+    "session-repairing",
+    "re-encrypting",
+    "resending",
+    "completed",
+    "failed"
+  ],
+  "rules": [
+    "every retry re-encrypts plaintext",
+    "session repair precedes encryption",
+    "send failure is not completed",
+    "old ciphertext is never reused"
+  ]
+}
