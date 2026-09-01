@@ -1,0 +1,17 @@
+{
+  "id": "message.roundtrip.harness.001",
+  "pipeline": [
+    "serialize",
+    "Signal encrypt",
+    "WA envelope",
+    "outer message",
+    "delivery ACK",
+    "extract to/enc",
+    "Signal decrypt",
+    "session commit",
+    "deserialize",
+    "byte equality"
+  ],
+  "successCriterion": "recovered plaintext equals original",
+  "exactLiveWire": "not claimed; harness is deterministic integration coverage"
+}

@@ -1,0 +1,45 @@
+{
+  "milestone": "M1.61",
+  "status": "foundation-frozen",
+  "apiVersion": 1,
+  "package": "@hayaxxdev-bit/atrocity",
+  "publicEntry": "src/index.ts",
+  "internalEntry": "src/internal.ts",
+  "publicSurface": [
+    "AtrocityClient",
+    "AtrocityClientError",
+    "ATROCITY_PUBLIC_API_VERSION",
+    "Capability",
+    "CapabilityName",
+    "CapabilityStatus",
+    "ClientCapabilityMap",
+    "AtrocityPublicSnapshot",
+    "ProtocolNode"
+  ],
+  "frozenRules": [
+    "ConnectionManager owns global connection lifecycle.",
+    "ProtocolRuntime owns protocol lifecycle.",
+    "ConnectionProtocolAdapter bridges lifecycle ownership.",
+    "ProtocolRegistry owns inbound protocol routing.",
+    "ProtocolFeatureManager owns feature activation order.",
+    "ProtocolEventBus is observational and typed.",
+    "IqCorrelator owns pending IQ request lifecycle.",
+    "MessageDeliveryTracker owns message delivery state.",
+    "Persistence is versioned and atomic but not encrypted-at-rest.",
+    "WhatsApp-specific assumptions remain compatibility-layer concerns."
+  ],
+  "m2CompatibilitySeams": [
+    "Exact WhatsApp Noise transcript",
+    "Exact WhatsApp frame semantics",
+    "WAProto compatibility",
+    "ClientPayload/login/registration exactness",
+    "History/app-state sync semantics",
+    "Live interoperability vectors"
+  ],
+  "auditFixes": [
+    "Narrowed root package exports to public facade.",
+    "Added explicit internal development entrypoint.",
+    "Removed any from ProtocolEventBus storage/dispatch implementation."
+  ],
+  "nextMilestone": "M2.0"
+}

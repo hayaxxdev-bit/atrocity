@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+.vscode/
+.idea/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+.markdown-collab
+patches
+apply-patches.sh
+commit-hashes.txt

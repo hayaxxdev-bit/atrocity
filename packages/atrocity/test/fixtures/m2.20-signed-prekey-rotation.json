@@ -1,0 +1,13 @@
+{
+  "id": "whatsapp.signed-prekey.rotation.001",
+  "reference": "WhiskeySockets/Baileys src/Utils/crypto.ts + src/Socket/socket.ts",
+  "sequence": [
+    "generate next id",
+    "sign public key",
+    "build encrypt/rotate IQ",
+    "await server success",
+    "persist active"
+  ],
+  "failurePolicy": "retain old active signed pre-key",
+  "exactWireBytes": null
+}

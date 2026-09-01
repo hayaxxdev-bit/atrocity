@@ -1,0 +1,17 @@
+{
+  "id": "noise.server-hello.sequence.001",
+  "reference": "WhiskeySockets/Baileys src/Utils/noise-handler.ts",
+  "steps": [
+    "authenticate(serverHello.ephemeral)",
+    "mixIntoKey(sharedKey(clientEphemeralPrivateKey, serverEphemeral))",
+    "decrypt(serverHello.static)",
+    "mixIntoKey(sharedKey(clientEphemeralPrivateKey, decryptedStaticKey))",
+    "decrypt(serverHello.payload)",
+    "verifyLeafCertificate",
+    "verifyIntermediateCertificate",
+    "verifyIssuerSerial",
+    "encrypt(noisePublicKey)",
+    "mixIntoKey(sharedKey(noisePrivateKey, serverEphemeral))"
+  ],
+  "cryptographicExpectedValues": null
+}

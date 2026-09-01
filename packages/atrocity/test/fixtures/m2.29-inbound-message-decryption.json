@@ -1,0 +1,14 @@
+{
+  "id": "whatsapp.inbound.message.decrypt.001",
+  "flow": [
+    "extract to/enc",
+    "classify msg/pkmsg",
+    "ensure session for pkmsg when required",
+    "decrypt Signal ciphertext",
+    "commit ratchet/session state",
+    "decode WAMessage protobuf",
+    "publish message"
+  ],
+  "commitBeforePublish": true,
+  "oldCiphertextReuse": false
+}

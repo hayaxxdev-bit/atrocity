@@ -1,0 +1,13 @@
+{
+  "id": "post-auth.sequence.001",
+  "reference": "WhiskeySockets/Baileys src/Socket/socket.ts",
+  "steps": [
+    "server success received",
+    "ensure/upload pre-keys",
+    "set active/passive initialization",
+    "validate key-bundle digest",
+    "finalize credentials and login identity",
+    "authenticated/open"
+  ],
+  "exactWireExpected": null
+}

@@ -1,0 +1,11 @@
+{
+  "id": "whatsapp.prekey.upload.execution.001",
+  "transaction": [
+    "pending-upload",
+    "build encrypt IQ",
+    "await IQ result",
+    "commit uploaded"
+  ],
+  "failurePolicy": "leave pending-upload",
+  "exactNetworkVectors": null
+}

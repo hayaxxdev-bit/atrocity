@@ -1,0 +1,22 @@
+/** Stable machine-readable error codes exposed by Atrocity. */
+export const ErrorCode = {
+  INTERNAL: "INTERNAL",
+  INVALID_ARGUMENT: "INVALID_ARGUMENT",
+  INVALID_STATE: "INVALID_STATE",
+  CONFIGURATION: "CONFIGURATION",
+  NOT_SUPPORTED: "NOT_SUPPORTED",
+  TIMEOUT: "TIMEOUT",
+  CANCELLED: "CANCELLED",
+  TRANSPORT: "TRANSPORT",
+  PROTOCOL: "PROTOCOL",
+  CRYPTO: "CRYPTO",
+  AUTHENTICATION: "AUTHENTICATION",
+  AUTHORIZATION: "AUTHORIZATION",
+  SESSION: "SESSION",
+  SYNC: "SYNC",
+  MESSAGE: "MESSAGE",
+  GROUP: "GROUP",
+  MEDIA: "MEDIA",
+} as const;
+
+export type ErrorCode = (typeof ErrorCode)[keyof typeof ErrorCode];

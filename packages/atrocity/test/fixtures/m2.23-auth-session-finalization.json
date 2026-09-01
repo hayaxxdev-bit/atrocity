@@ -1,0 +1,17 @@
+{
+  "id": "authenticated.session.finalization.001",
+  "preconditions": [
+    "authentication=accepted",
+    "postAuth=authenticated",
+    "keyBundle=validated"
+  ],
+  "commit": [
+    "persist authenticated identity",
+    "persist Signal key bundle",
+    "publish active session"
+  ],
+  "failure": [
+    "do not publish active session"
+  ],
+  "exactStorageFormat": "current foundation session schema"
+}

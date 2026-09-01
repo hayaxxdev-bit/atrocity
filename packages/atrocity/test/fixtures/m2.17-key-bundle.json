@@ -1,0 +1,10 @@
+{
+  "id": "whatsapp.key-bundle.001",
+  "reference": "WhiskeySockets/Baileys src/Socket/socket.ts + src/Utils/signal.ts",
+  "operations": {
+    "rotation": "generate next signed pre-key id and signed key pair",
+    "digest": "derive deterministic local digest over public key-bundle state",
+    "reconcile": "compare local digest against server digest"
+  },
+  "exactServerDigestAlgorithm": null
+}

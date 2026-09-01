@@ -1,0 +1,13 @@
+{
+  "id": "whatsapp.stream.bootstrap.001",
+  "references": [
+    "WhiskeySockets/Baileys src/Types/Socket.ts",
+    "WhiskeySockets/Baileys src/Defaults/index.ts",
+    "WhiskeySockets/Baileys src/Socket/socket.ts"
+  ],
+  "openNode": {
+    "required": ["to", "version", "client"],
+    "optional": ["connect_type", "connect_reason", "device", "passive"]
+  },
+  "exactWireBytes": null
+}
